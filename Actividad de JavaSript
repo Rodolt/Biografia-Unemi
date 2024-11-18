@@ -1,0 +1,26 @@
+ ##Actividad DE JAVASCRIPT 
+ <pre>function perfecto() {
+  debugger
+  let resp = "", num = "", r = 0, divisor = 1, msg = "", acu = 0
+
+  // Obtiene el valor ingresado en "numero" y lo convierte a entero
+  num = document.getElementById("numero").value
+  resp = document.getElementById("resp")
+  num = parseInt(num)
+
+  // Calcula la suma de los divisores de num excluyendo el propio número
+  while (divisor < num) {
+    r = num % divisor
+    if (r == 0) { // Si divisor es un divisor, agrégalo a la suma total (acu)
+      acu = acu + divisor
+    }
+    divisor = divisor + 1
+  }
+
+  // Verifica si la suma de los divisores es igual al número original
+  if (acu == num) {
+    resp.innerHTML = ${num} Es perfecto  // Muestra que es un número perfecto
+  } else {
+    resp.innerHTML = ${num} No Es perfecto // Muestra que no es perfecto
+  }
+}</pre>
