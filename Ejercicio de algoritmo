@@ -1,0 +1,15 @@
+ ##EJERCICIO a realisar JAVASCRIPT
+ <pre> // Segunda función 'parImpar' que también determina si 'x' es par o impar y muestra el resultado en la consola
+function parImpar(x) {
+  // Declara una variable 'r' que se usará para almacenar el resultado
+  let r;
+
+  // Verifica si el residuo de 'x' dividido entre 2 es igual a 0
+  if (x % 2 === 0) {
+    // Si el residuo es 0, el número es par
+    console.log(x + " es Par");
+  } else {
+    // Si el residuo no es 0, el número es impar
+    console.log(x + " es Impar");
+  }
+}</pre>
